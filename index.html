@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Manage landing page</title>
+</head>
+
+<body id="body">
+  <header class="header">
+    <div class="header__div">
+      <div class="header__div--header-left">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="header__div--header-right">
+        <i id="bx-menu" class='bx bx-menu'></i>
+        <ul id="list-menu" class="list-menu-disable">
+          <li><a href="#"> Pricing
+            </a></li>
+          <li><a href="#"> Product
+            </a></li>
+          <li><a href="#"> About Us
+            </a></li>
+          <li><a href="#"> Careers
+            </a></li>
+          <li><a href="#"> Community
+            </a></li>
+        </ul>
+        <a id="btn-header" class="btn header-right--btn" href="#form">Get Started</a>
+      </div>
+    </div>
+
+  </header>
+  <main id="main">
+    <section class="container  header-container">
+      <div><img src="./images/illustration-intro.svg" alt="header-container--image-illustration"
+          class="header-container--image-illustration"></div>
+    </section>
+    <section class="container  firs-container">
+      <h1 class="firs-container--title"> Bring everyone together to build better products.</h1>
+      <p class="firs-container--text">Manage makes it simple for software teams to plan day-to-day
+        tasks while keeping the larger team goals in view.</p>
+      <a class="btn firs-container--btn" href="#form">Get Started</a>
+    </section>
+    <section class="container  sec-container">
+      <h2 class="sec-container--title">What’s different about Manage?</h2>
+      <p class="sec-container--text">Manage provides all the functionality your team needs, without
+        the complexity. Our software is tailor-made for modern digital
+        product teams.</p>
+    </section>
+    <section class="container  three-container">
+      <div class="three-container--firt-item">
+        <h3 class="firt-item--title">
+          <p class="firt-item--title-p">01</p> Track company-wide progress
+        </h3>
+        <p class="firt-item--text"> See how your day-to-day tasks fit into the wider vision. Go from
+          tracking progress at the milestone level all the way done to the
+          smallest of details. Never lose sight of the bigger picture again.</p>
+      </div>
+      <div class="three-container--sec-item">
+        <h3 class="sec-item--title">
+          <p class="sec-item--title-p">02</p>Advanced built-in reports
+        </h3>
+        <p class="sec-item--text"> Set internal delivery estimates and track progress toward company
+          goals. Our customisable dashboard helps you build out the reports
+          you need to keep key stakeholders informed.</p>
+      </div>
+      <div class="three-container--three-item">
+        <h3 class="three-item--title">
+          <p class="three-item--title-p">03</p>Everything you need in one place
+        </h3>
+        <p class="three-item--text"> Stop jumping from one service to another to communicate, store files,
+          track tasks and share documents. Manage offers an all-in-one team
+          productivity solution.</p>
+      </div>
+    </section>
+    <section class="container  four-container">
+      <h2 class="four-container--title">What they’ve said</h2>
+      <div class="four-container-card">
+        <div class="card__users-container">
+          <div class="card__user card__users-container--ali" id="item-1">
+            <img class="card__users--png" src="./images/avatar-ali.png" alt="avatar ali">
+            <p class="card__users--name">Ali Bravo</p>
+            <div class="card__users-text-container">
+              <p class="card__users-text-container--text">“We have been able to cancel so many other subscriptions since
+                using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”</p>
+            </div>
+          </div>
+          <div class="card__user card__users-container--anisha" id="item-2">
+            <img class="card__users--png" src="./images/avatar-anisha.png" alt="avatar anisha">
+            <p class="card__users--name">Anisha Li</p>
+            <div class="card__users-text-container">
+              <p class="card__users-text-container--text">“Manage has supercharged our team’s workflow. The ability to
+                maintain
+                visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+          </div>
+          <div class="card__user card__users-container--richard" id="item-3">
+            <img class="card__users--png" src="./images/avatar-richard.png" alt="avatar richard">
+            <p class="card__users--name">Richard Watts</p>
+            <div class="card__users-text-container">
+              <p class="card__users-text-container--text">“Manage allows us to provide structure and process. It keeps
+                us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”</p>
+            </div>
+          </div>
+          <div class="card__user card__users-container--shanai" id="item-4">
+            <img class="card__users--png" src="./images/avatar-shanai.png" alt="avatar shanai">
+            <p class="card__users--name">Shanai Gough</p>
+            <div class="card__users-text-container">
+              <p class="card__users-text-container--text">“Their software allows us to track, manage and collaborate on
+                our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+            </div>
+          </div>
+        </div>
+        <nav class="card__span-container">
+          <a onclick="getBtn(0)" href="#item-1" class="card__span-container--btn btn-active span-1"></a>
+          <a onclick="getBtn(1)" href="#item-2" class="card__span-container--btn  span-2"></a>
+          <a onclick="getBtn(2)" href="#item-3" class="card__span-container--btn span-3"></a>
+          <a onclick="getBtn(3)" href="#item-4" class="card__span-container--btn span-4"></a>
+        </nav>
+      </div>
+      <a class="btn four-container--btn" href="#form">Get Started</a>
+    </section>
+    <section class="container six-container">
+      <h2 class="six-container--title">Simplify how your team works today.</h2>
+      <a class=" btn six-container--btn" href="#form">Get Started</a>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-input-container">
+      <form >
+        <input id="form" class="footer-input-container--input-item" type="email" placeholder="Updates in your inbox…" required >
+        <button class="btn footer-input-container--btn" href="#">GO</button>
+      </form>
+    </div>
+    <section class="footer-container container-list">
+      <ul>
+        <div class="container-list--div1">
+          <li><a href="#"></a> Home </li>
+          <li><a href="#"></a> Pricing </li>
+          <li><a href="#"></a> Products </li>
+          <li><a href="#"></a> About Us </li>
+        </div>
+        <div class="container-list--div2">
+          <li><a href="#"></a> Careers </li>
+          <li><a href="#"></a> Community </li>
+          <li><a href="#"></a> Privacy Policy </li>
+        </div>
+      </ul>
+    </section>
+    <section class="footer-container container-social-media">
+      <i class='bx bxl-facebook-square'></i>
+      <i class='bx bxl-youtube'></i>
+      <i class='bx bxl-twitter'></i>
+      <i class='bx bxl-pinterest'></i>
+      <i class='bx bxl-instagram'></i>
+    </section>
+    <section class="footer-container container-last">
+      <img src="./images/logo-footer.svg" alt="logo footer">
+    </section>
+    <p>Copyright 2020. All Rights Reserved</p>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/LautaroLD">Lautaro Duran</a>.
+    </div>
+  </footer>
+  <script src="./code.js"></script>
+</body>
+
+</html>
+<!-- 
+  
+
+  
+  
+
+  
+  
+-->
