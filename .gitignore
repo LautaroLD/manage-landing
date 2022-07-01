@@ -16,3 +16,4 @@
 *.md
 prepros.config
 design/
+styles/scss

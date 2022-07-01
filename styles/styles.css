@@ -64,7 +64,7 @@ header .header__div--header-right .list-menu-disable {
 }
 header .header__div--header-right .list-menu {
   position: absolute;
-  top: 10vh;
+  top: 80px;
   left: 3vw;
   background-color: #fff;
   width: 95vw;
@@ -317,6 +317,11 @@ footer .attribution > a {
   background-image: url("../../images/bg-simplify-section-mobile.svg");
   background-position: left;
   background-repeat: no-repeat;
+}
+@media only screen and (max-width: 767px) {
+  .six-container {
+    padding: 0 0 10px 0;
+  }
 }
 .six-container--title {
   font-size: 4.6rem;
